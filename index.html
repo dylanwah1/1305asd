@@ -27,149 +27,157 @@
 </head>
 <body>
     <div data-role="page" id="itourstart">
-    <div data-role="header" data-position="fixed" data-theme="a">
-            
-    </div>
-    
-	    <div data-theme="a">
-		
-                
-                <div data-role="content">
-                <a href="#homeitour">
+        <div data-role="header" data-position="fixed" data-theme="a"></div>
+        <div data-theme="a">
+            <div data-role="content"> <a href="#homeitour">
                     <div style=" text-align:center">
-                        <img style="width: 288px; height: 300px" src="http://i45.tinypic.com/2zo8xnl.jpg" />
+                        <img style="width: 288px; height: 300px" src="images/2zo8xnl.png" />
                     </div>
                 </a>
-	    
-	    
-	
-	
-	</div>
-	</div>
-	
-    </div>
-    <div data-role="page" id="homeitour" data-add-back-btn="true"> 
-        
-        <div data-role="header" data-position="fixed" data-theme="a">
-            <h1>iTour</h1>
-	    <div data-role="footer" data-position="fixed" data-theme="c">
-	    
-		<div data-role="navbar">
-                <ul>
-                    <li><a href="#homeitour" data-icon="home" data-theme="a" class="ui-btn-active ui-state-persist">Home</a></li>
-                    <li><a href="#addtour" data-transition="flip" data-icon="plus" data-theme="a">Tour</a></li>
-                    
-                    
-                </ul>
+
             </div>
         </div>
     </div>
-        
-        
+    <div data-role="page" id="homeitour" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="a">
+             <h1>iTour</h1>
+
+            <div data-role="footer" data-position="fixed" data-theme="c">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#homeitour" data-icon="home" data-theme="a" class="ui-btn-active ui-state-persist">Home</a>
+                        </li>
+                        <li><a href="#addTour" data-transition="flip" data-icon="plus" data-theme="a">Tour</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div data-role="content">
-            
             <div data-theme="a">
-                
                 <ul data-role="listview">
-                <li>
-                    <a href="#venuecontacts">
+                    <li> <a href="#venuecontacts">
                         Venue Contacts
                     </a>
-                </li>
-                <li>
-                    <a href="#error">
+
+                    </li>
+                    <li> <a href="#error">
                         Band Contacts
                     </a>
-                </li>
-                <li>
-                    <a href="#error">
+
+                    </li>
+                    <li> <a href="#error">
                         Merchandise Contacts
                     </a>
-                </li>
-                <li>
-                    <a href="#error">
+
+                    </li>
+                    <li> <a href="#error">
                         Previous Tours
                     </a>
-                </li>
-                
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div data-role="page" id="addTour" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="a">
+             <h1>iTour</h1>
+
+            <div data-role="footer" data-position="fixed" data-theme="c">
+                <div data-role="navbar" data-position="fixed">
+                    <ul>
+                        <li><a href="#homegroom" data-transition="flip" data-icon="home" data-theme="a">Home</a>
+                        </li>
+                        <li><a href="#add" data-icon="plus" data-theme="a" class="ui-btn-active ui-state-persist">Tour</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="navbar" id="navbar">
+            <ul>
+                <button id="displayDataButton" value="View Saved Tours" data-theme="a" data-icon="check"></button>
             </ul>
         </div>
-            </div>
-            
-        </div>
-        
-    </div>
-    <div data-role="page" id="addtour" data-add-back-btn="true" >
-        
-        <div data-role="header" data-position="fixed" data-theme="a">
-            <h1>iTour</h1>
-	    <div data-role="footer" data-position="fixed" data-theme="c">
-            <div data-role="navbar" data-position="fixed">
-                <ul>
-                    <li><a href="#homegroom" data-transition="flip" data-icon="home" data-theme="a">Home</a></li>
-                    <li><a href="#add" data-icon="plus" data-theme="a" class="ui-btn-active ui-state-persist">Tour</a></li>
-                    
-                    
-                </ul>
-	    </div>
-	    </div>
-            
-        </div>
-	
-	 <div data-role="content">
-            <form action="" method="post" id="addtour">
-		<div data-role="fieldcontain">
-		    <label for="fname">Tour Name:</label>
-		    <input type="text" name="fname" id="fname" class="required" />
-		</div>	
-		<div data-role="fieldcontain">    
-		    <label for="lname">Start Date:</label>
-		    <input type="text" name="lname" id="lname" class="required"/>
-		</div>
-		<div data-role="fieldcontain">    
-		    <label for="email">End Date:</label>
-		    <input type="text" name="email" id="email" class="required" />
-		</div>
-		<div data-role="content">
-            
-            <div data-theme="a">
-		
-		<ul data-role="listview">
-                <li>
-                    <a href="#budget">
+        <div data-role="content">
+            <form action="" method="post" id="tourform">
+                <div data-role="fieldcontain">
+                    <label for="fname">Tour Name:</label>
+                    <input type="text" name="fname" id="fname" class="required" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="lname">Start Date:</label>
+                    <input type="text" name="lname" id="lname" class="required" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="email">End Date:</label>
+                    <input type="text" name="email" id="email" class="required" />
+                </div>
+                <div data-role="content">
+                    <div data-theme="a">
+                        <ul data-role="listview">
+                            <li> <a href="#budget">
                         Add Budget
                     </a>
-                </li>
-                <li>
-                    <a href="#adddate">
+
+                            </li>
+                            <li> <a href="#adddate">
                         Add Dates
                     </a>
-                </li>
-                <li>
-                    <a href="#addvenues">
+
+                            </li>
+                            <li> <a href="#addvenues">
                         Add Venues
                     </a>
-                </li>
-	    </div>
-		</div>
-		
-    
-		<div>
-		    <input type="reset" value="Reset" data-theme="a" />
-		    <input type="submit" value="Submit" id="button" />
-		</div>
-		<a href="#" id="clearData">Clear Stored Data</a>
-	        <a href="#" id="displayData">Display Data</a>
-		
-		
-	    </form>
-	    
-	 </div>
+
+                            </li>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" data-theme="a" id="submitButton">
+                    <input type="reset" value="Reset" data-theme="a">
+                </div>
+            </form>
+        </div>
     </div>
-        
     </div>
-    
-    
+    <div data-role="page" id="displayData" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="a">
+             <h1>iTour</h1>
+
+            <div data-role="footer" data-position="fixed" data-theme="c">
+                <div data-role="navbar" data-position="fixed">
+                    <ul>
+                        <li><a href="#homegroom" data-transition="flip" data-icon="home" data-theme="a">Home</a>
+                        </li>
+                        <li><a href="#add" data-icon="plus" data-theme="a" class="ui-btn-active ui-state-persist">Tour</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="navbar" id="navbar">
+            <ul>
+                <button id="clearLocal" value="Clear local-storage" data-theme="a" data-icon="gear"></button>
+            </ul>
+        </div>
+        <div data-role="content" id="container"></div>
+        <div data-role="popup" id="deleteObject" data-theme="a" data-overlay-theme="a" class="ui-content" style="max-width:200px; padding-bottom:2em;">
+            	<h3>Delete Entry?</h3>
+
+            <p>The entry will be lost.</p>	<a href="#" data-role="button" data-rel="back" data-theme="a" data-icon="check" data-inline="true" data-mini="true" id="deleteButton">Delete</a>
+	<a href="#" data-role="button" data-rel="back" data-inline="true" data-mini="true">Cancel</a>
+
+        </div>
+        <div data-role="popup" id="saveConfirm" data-theme="a" data-overlay-theme="a" class="ui-content" style="max-width:200px; padding-bottom:2em;">
+            	<h3>Data Saved</h3>
+
+            <p>Data saved into local-storage...</p>	<a href="#displayData" data-role="button" data-rel="back" data-theme="a" data-icon="check" data-inline="true" data-mini="true" id="deleteButton">Ok</a>
+
+        </div>
+    </div>
    
     
    
@@ -183,195 +191,152 @@
 
 	<!-- JavaScript under here -->
 	<script>
-	    $(document).ready(function() {
-	    
-	    $('#button').on('click', function(e) {
-		e.preventDeafault();
-	   
-	    
-	    
-	    
-	   function storeData(key) {
-    if (!key) {
-        var id = Math.floor(Math.random() * 1000000001);
-    } else {
-        id = key;
-    }
+	  
+ $(document).ready();
 
-    var item = {};
 
-    item.fname = ["Tour Name:", $('#fname').val()];
-    item.lname = ["Start Date:", $('#lname').val()];
-    item.email = ["End Date:", $('#email').val()];
 
-    localStorage.storeItem(key, JSON.stringify(item));
-    alert("New Tour Started!");
-}
-
-function getData() {
-    toggleControls("on");
-    if (localStorage.length === 0) {
-        alert("There are no items saved! So default data was added!");
-        autoFillData();
-    }
-
-}
-makeItemLinks(localStorage.key(i), linksLi);
+	    $(document).on('pageinit', '#addTour', function () {
+	        var $myTourForm = $('#tourForm');
+	        $('#button').on('click', function (e) {
+	            e.preventDeafault();
 
 
 
 
-//auto Populate
-function autoFillData() {
-    for (var n in json) {
-        var id = Math.floor(Math.random() * 1000000001);
-        localStorage.setItem(key, JSON.stringify(item));
-    }
-}
+	            function storeData(key) {
+	                if (!key) {
+	                    var id = Math.floor(Math.random() * 1000000001);
+	                } else {
+	                    id = key;
+	                }
 
-function makeItemLinks(key, linksLi) {
+	                var item = {};
 
-    var editLink = document.createElement('a');
-    editLink.href = "#";
-    editLink.key = key;
-    var editText = "Edit Item";
-    editLink.addEventListener("click", editItem);
-    editLink.innerHTML = editText;
-    linksLi.appendChild(editLink);
+	                item.fname = ["Tour Name:", $('#fname').val()];
+	                item.lname = ["Start Date:", $('#lname').val()];
+	                item.email = ["End Date:", $('#email').val()];
 
-
-    var breakTag = document.createElement('br');
-    linksLi.appendChild(breakTag);
-
-    var deleteLink = document.createElement('a');
-    deleteLink.href = "#";
-    deleteLink.key = key;
-    var deleteText = "Delete Item";
-    deleteLink.addEventListener("click", deleteItem);
-    deleteLink.innerHTML = deleteText;
-    linksLi.appendChild(deleteLink);
-}
-
-function editItem() {
-
-    var value = localStorage.getItem(this.key);
-    var item = JSON.parse(value);
-
-   
-
-    $('#fname')
-        .val() = item.fname[1];
-    $('#lname')
-        .val() = item.lname[1];
-    $('#email')
-        .val() = item.email[1];
+	                localStorage.storeItem(key, JSON.stringify(item));
+	                alert("New Tour Started!");
+	            }
 
 
-    $('saveData').removeEventListener("click", storeData);
-    $('saveData').value = "Edit Item";
-    var editSubmit = ge('saveData');
-    editSubmit.addEventListener("click", validate);
-    editSubmit.key = this.key;
-}
-
-function deleteItem() {
-    var ask = confirm("Are you sure you want to delete this item?");
-    if (ask) {
-        localStorage.removeItem(this.key);
-        window.location.reload();
-    } else {
-        alert("Item was not erased!");
-    }
-}
-
-function deleteData() {
-    var askAll = confirm("WARNING! This will delete all of your tours! Press OK to continue.");
-    if (localStorage.length === 0) {
-        alert("There is no data to clear!");
-
-    } else if (askAll) {
-        localStorage.clear();
-        alert("All Items Have Been Deleted!");
-        window.location.reload();
-        return false;
-    } else {
-        alert("All tour's were not erased!");
-    }
-}
-
-function validate(eventData) {
-    //Define the elements to be checked
-    var getfname = $('#fname');
-    var getlname = $('#lname');
-    var getemail = $('#email');
+	            $myTourForm.validate({
 
 
-    errorMsg.innerHTML = "";
-
-    getfname.style.border = "1px solid black";
-    getlname.style.border = "1px solid black";
-    getemail.style.border = "1px solid black";
-
-    var messageArray = [];
+	                submitHandler: function (randomId) {
 
 
-    if (getfname.value === "") {
-        var fnameError = "Please enter the tour name!";
-        getfname.style.border = "2px solid red";
-        messageArray.push(fnameError);
-    }
-
-    if (getlname.value === "") {
-        var lnameError = "Please enter start date!";
-        getlname.style.border = "2px solid red";
-        messageArray.push(lnameError);
-
-    }
-
-    if (getemail.value === "") {
-        var emailError = "Please enter your end date!";
-        getemail.style.border = "2px solid red";
-        messageArray.push(emailError);
-    }
+	                    var data = $myTourForm.serializeArray();
 
 
-    if (messageArray.length >= 1) {
-        for (var i = 0, j = messageArray.length; i < j; i++) {
-            var txt = document.createElement('li');
-            txt.innerHTML = messageArray[i];
-            errorMsg.appendChild(txt);
-        }
-        eventData.preventDefault();
-        return false;
-    } else {
-
-        storeData(this.key);
-    }
+	                    var jsonObj = JSON.stringify(data);
 
 
-}
+	                    var randomId = genRandomId();
 
-function clearData() {
-    if (localStorage.length === 0) {
-        alert("There is no data to clear!");
 
-    } else {
-        localStorage.clear();
-        alert("All Items Have Been Deleted!");
-        window.location.reload();
-        return false;
-    }
-}
+	                    localStorage.setItem(randomId, jsonObj);
+
+
+	                    $($myTourForm)[0].reset();
+
+
+	                    window.location = '#displayInfo';
+
+	                }
+	            });
+
+	            $('#displayDataButton').click(function () {
+
+
+	                window.location = '#displayData';
+
+
+	                window.location.reload('#displayData');
+	            });
+	        });
+
+	        $(document).on('pageinit', '#displayData', function () {
+
+
+	            $('#clearLocal').click(function () {
+
+	                localStorage.clear();
+	                window.location.reload();
+	            });
+
+
+	            outputData();
+
+
+	            $('#container').on('click', 'ul', function () {
+
+	                alert("Entry ID: " + this.id);
+
+
+	            });
+	        });
 
 
 
-});
+
+
+
+	        var outputData = function () {
+
+	            for (var i = 0, j = localStorage.length; i < j; i++) {
+
+
+	                var storedKey = localStorage.key(i);
+
+
+	                var storedObj = localStorage.getItem(storedKey);
+
+
+	                var parsedObj = JSON.parse(storedObj);
+
+
+	                parsedObj.id = storedKey;
+
+
+	                var ulListView = $('#container').append('<ul data-role="listview" data-split-icon="minus" data-split-theme="c" data-inset="true" id="ulOrigin' + parsedObj.id + '"></ul>');
+
+
+	                var insideLi = $('#ulOrigin' + parsedObj.id).append('<li><a href="#li' + parsedObj.id + '"><img src="images/' + parsedObj[0].value + '.png"><h2>' + parsedObj[1].value + '</h2><p>' + parsedObj[0].value + '</p></a><a href = "#deleteObject" data-rel = "popup" data-position-to = "window" data-transition = "pop">Delete Entry</a></li>');
+
+	                insideLi.listview().listview('refresh');
+
+
+	                console.log(parsedObj);
+	            }
+
+
+	        };
+
+
+	        var genRandomId = function () {
+	            var randomId = Math.floor(Math.random() * 10000001);
+	            return randomId;
+	        };
+
+
+	        var targetObj = function (id) {
+
+	            $(id).click(function () {
+	                alert(id);
+	            });
+	        });
+
+
 	</script>
         
-        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+        <<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	<script type = "text/javascript" src = "js/jquery.validate.min.js"></script>
+	<script type = "text/javascript" src = "js/jqm.js"></script>
+	
 
 </body>
 </html>
